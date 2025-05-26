@@ -1,0 +1,14 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<form asp-action="Create" asp-controller="Categories" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Name">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
