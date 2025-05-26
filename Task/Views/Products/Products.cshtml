@@ -26,6 +26,9 @@
                         <td>@prod.Price</td>
                         <td>@prod.Category.Name</td>
                         <td>
+                            <a asp-action="Details" asp-controller="Products" asp-route-id="@prod.ProductId" class="btn btn-outline-primary">
+                                Details
+                            </a>
                             <a asp-action="Edit" asp-controller="Products" asp-route-id="@prod.ProductId" class="btn btn-outline-success">
                                 Edit
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">

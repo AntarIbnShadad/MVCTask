@@ -28,6 +28,11 @@ namespace Task.Controllers
             ViewBag.Categories = new SelectList(db.Categories, "CategoryId", "Name");
             return View(GetSingleProduct(id));
         }
+        public IActionResult Details(int id)
+        {
+            ViewBag.Categories = new SelectList(db.Categories, "CategoryId", "Name");
+            return View(GetSingleProduct(id));
+        }
         public IActionResult Delete(int id)
         {
             db.Products.Remove(GetSingleProduct(id));
@@ -80,7 +85,7 @@ namespace Task.Controllers
 
         public Product GetSingleProduct(int id)
         {
-            Product _products = db.Products.Find(id);
+            Product _products = db.Products.Include(c => c.Category).Where(x => x.ProductId ==id).Select(r => r).FirstOrDefault();
 
             if (_products != null)
             {

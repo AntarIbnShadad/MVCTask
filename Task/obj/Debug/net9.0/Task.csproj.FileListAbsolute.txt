@@ -338,3 +338,4 @@ C:\Users\ptadmin\source\repos\Task\Task\bin\Debug\net9.0\ru\Microsoft.CodeAnalys
 C:\Users\ptadmin\source\repos\Task\Task\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\ptadmin\source\repos\Task\Task\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\ptadmin\source\repos\Task\Task\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\ptadmin\source\repos\Task\Task\obj\Debug\net9.0\Task.sourcelink.json
